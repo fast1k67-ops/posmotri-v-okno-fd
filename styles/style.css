@@ -92,6 +92,7 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
+  object-position: center;
   object-fit: cover;
 }
 
@@ -190,36 +191,34 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding-top: 1px;
 }
 
 .search-form__label {
   display: flex;
   align-items: center;
   width: fit-content;
-  gap: 15px;
+  gap: 6px;
   cursor: pointer;
 }
 
 .search-form__textfield {
   width: 225px;
   min-height: 27px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
   background-color: transparent;
-  border-left: 0;
-  border-right: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
   color: white;
   appearance: none;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
-  padding-left: 0px;
-  padding-right: 0px;
-  font-family: inherit;
-  font-size: inherit;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .search-form__textfield::placeholder {
-  color: rgb(255 255 255 / 0.7);
   opacity: 70%;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
@@ -251,7 +250,6 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid white;
-  margin-right: -10px;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -293,7 +291,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .search-form__submit-button {
-  width: 194px;
+  width: 195px;
   align-items: flex-end;
 }
 
@@ -301,6 +299,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   width: 390px;
   margin-top: 26px;
   margin-bottom: 2px;
+  margin-left: 4px;
 }
 
 .button:hover {
@@ -323,6 +322,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__card-link {
   display: block;
+  text-decoration: none;
 }
 
 .content__card-link_current {
@@ -331,6 +331,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__card-link:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .content__card-link:hover {
